@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.devMode" value="true" />
+    
+    <package name="sample" namespace="/" extends="struts-default">
+		<action name="hello" class="sample.struts2.HelloAction">
+			<result name="success">/WEB-INF/jsp/hello.jsp</result>
+		</action>
+		<action name="spring" class="sample.struts2.SpringSampleAction">
+            <result name="success">/WEB-INF/jsp/petList.jsp</result>
+        </action>
+    </package>
+    
+    
+</struts>
